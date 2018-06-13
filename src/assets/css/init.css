@@ -1,0 +1,355 @@
+@charset "utf-8";
+html,
+body {
+    height: 100%;
+}
+
+
+/* 禁用iPhone中Safari的字号自动调整 */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* 解决IOS默认滑动很卡的情况 */
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* 禁止缩放表单 */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+    resize: none;
+    border: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.picker-slot-wrapper {
+    height: 504px !important;
+}
+
+.picker-center-highlight {
+    margin-top: -18px !important;
+    height: 72px !important;
+}
+
+
+/* 取消链接高亮  */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 设置HTML5元素为块 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* 图片自适应 */
+
+img {
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+    display: block;
+    -ms-interpolation-mode: bicubic;
+    /*为了照顾ie图片缩放失真*/
+}
+
+
+/* 初始化 */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif; */
+    font: 12px/1.5 'PingFang-SC-Regular';
+    color: #555;
+    background-color: #f0f0f0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'PingFang-SC-Regular';
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 去除a标签聚焦边框 */
+
+a:focus {
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    /* font-family: 'Microsoft YaHei'; */
+    font-family: 'PingFang-SC-Regular';
+}
+
+img {
+    border: none;
+}
+
+input {
+    /* font-family: 'Microsoft YaHei'; */
+    font-family: 'PingFang-SC-Regular';
+}
+
+
+/*单行溢出*/
+
+.one-txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*多行溢出 手机端使用*/
+
+.txt-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+}
+
+
+/* 移动端点击a链接出现蓝色背景问题解决 */
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.w153 {
+    width: 153px;
+}
+
+.fl {
+    float: left;
+    display: block;
+}
+
+.fr {
+    float: right;
+    display: block;
+}
+
+.db {
+    display: block !important;
+}
+
+.dn {
+    display: none;
+}
+
+
+/* 右箭头 */
+
+.r_arrow {
+    float: right;
+    width: 40px;
+    height: 92px;
+    margin-left: 18px;
+    background: url('../../assets/images/rightarrow.png') center no-repeat!important;
+    background-size: 22px 42px!important;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.mint-indicator-wrapper {
+    z-index: 999;
+}
+
+.mb120 {
+    margin-bottom: 120px!important;
+}
+
+.otherSuggest {
+    width: 50%;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    background: #D80E1C;
+    color: #fff;
+    text-align: center;
+    height: 82px;
+    line-height: 82px;
+    font-size: 34px;
+}
+
+.overHidden {
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: right;
+}
+
+.overHiddenMany {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.van-picker-column__item--selected {
+    color: rgb(238, 14, 14) !important;
+}
